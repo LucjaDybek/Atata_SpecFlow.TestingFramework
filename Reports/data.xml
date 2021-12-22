@@ -1,0 +1,829 @@
+<test-run id="2" duration="18.497826" testcasecount="6" total="6" passed="0" failed="2" inconclusive="4" skipped="0" result="Failed" start-time="2021-04-28T 12:12:09Z" end-time="2021-04-28T 12:12:34Z">
+  <test-suite type="Assembly" name="IFlow.Testing.dll" fullname="C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\bin\Debug\netcoreapp3.1\IFlow.Testing.dll" total="6" passed="0" failed="2" inconclusive="4" skipped="0" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:34Z" duration="18.497826">
+    <test-suite type="TestSuite" name="IFlow" fullname="IFlow" total="6" passed="0" failed="2" inconclusive="4" skipped="0" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:34Z" duration="18.497826">
+      <test-suite type="TestSuite" name="Testing" fullname="IFlow.Testing" total="6" passed="0" failed="2" inconclusive="4" skipped="0" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:34Z" duration="18.497826">
+        <test-suite type="TestSuite" name="Feature" fullname="IFlow.Testing.Feature" total="6" passed="0" failed="2" inconclusive="4" skipped="0" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:34Z" duration="18.497826">
+          <test-suite type="TestFixture" name="LoginTestsFeature" fullname="IFlow.Testing.Feature.LoginTestsFeature" total="2" passed="0" failed="2" inconclusive="0" skipped="0" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:22Z" duration="11.092837">
+            <test-case name="UserLoginByAPI" fullname="IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI" methodname="UserLoginByAPI" classname="LoginTestsFeature" result="Failed" start-time="2021-04-28T 12:12:11Z" end-time="2021-04-28T 12:12:16Z" duration="4.447823" asserts="0">
+              <output><![CDATA[2021-04-28 14:12:11.6887  INFO Starting test: UserLoginByAPI
+2021-04-28 14:12:11.6887  INFO Starting test: UserLoginByAPI
+2021-04-28 14:12:11.7066 TRACE > Set up AtataContext
+2021-04-28 14:12:11.7066 TRACE > Set up AtataContext
+2021-04-28 14:12:11.7414 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:11.7414 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:11.7427 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:11.7427 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:11.7431 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:11.7431 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:11.7433 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:11.7433 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:11.7438 TRACE - Set: Culture=en-US
+2021-04-28 14:12:11.7438 TRACE - Set: Culture=en-US
+2021-04-28 14:12:11.7522 TRACE - Set: DriverService=ChromeDriverService on port 51813
+2021-04-28 14:12:11.7522 TRACE - Set: DriverService=ChromeDriverService on port 51813
+2021-04-28 14:12:12.9515 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:12.9515 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:12.9532 TRACE < Set up AtataContext (1.246s)
+2021-04-28 14:12:12.9532 TRACE < Set up AtataContext (1.246s)
+When Registration by api
+-> done: ApiSteps.WhenRegistrationByApi() (2,4s)
+When User send correct data to log in
+-> error: Cannot perform runtime binding on a null reference (0,2s)
+2021-04-28 14:12:15.9378 ERROR Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IFlow.Testing.Utils.Api.Auth.AuthRequests.AuthLoginGetToken(String userNameOrEmail, String password) in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Utils\Api\Auth\AuthRequests.cs:line 11
+   at IFlow.Testing.StepDefinitions.ApiSteps.WhenUserSendCorrectDataToLogIn() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\ApiSteps.cs:line 27
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 17
+2021-04-28 14:12:15.9378 ERROR Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IFlow.Testing.Utils.Api.Auth.AuthRequests.AuthLoginGetToken(String userNameOrEmail, String password) in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Utils\Api\Auth\AuthRequests.cs:line 11
+   at IFlow.Testing.StepDefinitions.ApiSteps.WhenUserSendCorrectDataToLogIn() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\ApiSteps.cs:line 27
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 17
+2021-04-28 14:12:15.9408 ERROR Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IFlow.Testing.Utils.Api.Auth.AuthRequests.AuthLoginGetToken(String userNameOrEmail, String password) in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Utils\Api\Auth\AuthRequests.cs:line 11
+   at IFlow.Testing.StepDefinitions.ApiSteps.WhenUserSendCorrectDataToLogIn() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\ApiSteps.cs:line 27
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 17
+2021-04-28 14:12:15.9408 ERROR Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IFlow.Testing.Utils.Api.Auth.AuthRequests.AuthLoginGetToken(String userNameOrEmail, String password) in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Utils\Api\Auth\AuthRequests.cs:line 11
+   at IFlow.Testing.StepDefinitions.ApiSteps.WhenUserSendCorrectDataToLogIn() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\ApiSteps.cs:line 27
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.<>c__DisplayClass2_0.<<InvokeBindingDelegateAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.<>c__DisplayClass1_0`1.<<RunSync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 17
+2021-04-28 14:12:15.9414  INFO > Clean up AtataContext
+2021-04-28 14:12:15.9414  INFO > Clean up AtataContext
+2021-04-28 14:12:16.0410  INFO < Clean up AtataContext (0.099s)
+2021-04-28 14:12:16.0410  INFO < Clean up AtataContext (0.099s)
+2021-04-28 14:12:16.0419  INFO Finished test (4.417s)
+2021-04-28 14:12:16.0419  INFO Finished test (4.417s)
+2021-04-28 14:12:16.0424  INFO Pure test execution time: 2.960s
+2021-04-28 14:12:16.0424  INFO Pure test execution time: 2.960s
+
+]]></output>
+              <failure>
+                <message>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException : Cannot perform runtime binding on a null reference</message>
+                <stack-trace>   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at IFlow.Testing.Utils.Api.Auth.AuthRequests.AuthLoginGetToken(String userNameOrEmail, String password) in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Utils\Api\Auth\AuthRequests.cs:line 11
+   at IFlow.Testing.StepDefinitions.ApiSteps.WhenUserSendCorrectDataToLogIn() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\ApiSteps.cs:line 27
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeDelegateSynchronously(Delegate bindingDelegate, Object[] invokeArgs)
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserLoginByAPI() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 17</stack-trace>
+              </failure>
+            </test-case>
+            <test-case name="UserWantLogInWitchActiveAccount" fullname="IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount" methodname="UserWantLogInWitchActiveAccount" classname="LoginTestsFeature" result="Failed" start-time="2021-04-28T 12:12:16Z" end-time="2021-04-28T 12:12:22Z" duration="6.645014" asserts="0">
+              <properties>
+                <property name="Category" value="TEST_IB-129" />
+              </properties>
+              <output><![CDATA[2021-04-28 14:12:16.0584  INFO Starting test: UserWantLogInWitchActiveAccount
+2021-04-28 14:12:16.0584  INFO Starting test: UserWantLogInWitchActiveAccount
+2021-04-28 14:12:16.0593 TRACE > Set up AtataContext
+2021-04-28 14:12:16.0593 TRACE > Set up AtataContext
+2021-04-28 14:12:16.0602 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:16.0602 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:16.0607 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:16.0607 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:16.0610 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:16.0610 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:16.0614 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:16.0614 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:16.0617 TRACE - Set: Culture=en-US
+2021-04-28 14:12:16.0617 TRACE - Set: Culture=en-US
+2021-04-28 14:12:16.0625 TRACE - Set: DriverService=ChromeDriverService on port 51831
+2021-04-28 14:12:16.0625 TRACE - Set: DriverService=ChromeDriverService on port 51831
+2021-04-28 14:12:17.3225 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:17.3225 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:17.3238 TRACE < Set up AtataContext (1.264s)
+2021-04-28 14:12:17.3238 TRACE < Set up AtataContext (1.264s)
+Given User put complete data but don't mark checkboxes on registration
+2021-04-28 14:12:17.3621  INFO Go to "Register" page
+2021-04-28 14:12:17.3621  INFO Go to "Register" page
+2021-04-28 14:12:17.4130  INFO > Set "UserLogin" to "Login Text Input" text input
+2021-04-28 14:12:17.4130  INFO > Set "UserLogin" to "Login Text Input" text input
+2021-04-28 14:12:17.4160 TRACE - > Execute behavior ValueSetUsingClearAndSendKeysAttribute against "Login Text Input" text input
+2021-04-28 14:12:17.4160 TRACE - > Execute behavior ValueSetUsingClearAndSendKeysAttribute against "Login Text Input" text input
+2021-04-28 14:12:17.4386 TRACE - - > Find visible element by XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver
+2021-04-28 14:12:17.4386 TRACE - - > Find visible element by XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver
+2021-04-28 14:12:22.4563 TRACE - - < Find visible element by XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver (5.017s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+2021-04-28 14:12:22.4563 TRACE - - < Find visible element by XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]" in ChromeDriver (5.017s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+2021-04-28 14:12:22.4571 TRACE - < Execute behavior ValueSetUsingClearAndSendKeysAttribute against "Login Text Input" text input (5.041s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+2021-04-28 14:12:22.4571 TRACE - < Execute behavior ValueSetUsingClearAndSendKeysAttribute against "Login Text Input" text input (5.041s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+2021-04-28 14:12:22.4576  INFO < Set "UserLogin" to "Login Text Input" text input (5.044s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+2021-04-28 14:12:22.4576  INFO < Set "UserLogin" to "Login Text Input" text input (5.044s) >>
+OpenQA.Selenium.NoSuchElementException: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+-> error: Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False} (5,1s)
+When User input credentials on login page
+-> skipped because of previous errors
+Then User is logged to account
+-> skipped because of previous errors
+2021-04-28 14:12:22.6256 ERROR OpenQA.Selenium.NoSuchElementException : Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ValueSetUsingClearAndSendKeysAttribute.Execute[TOwner](IUIComponent`1 component, String value)
+   at Atata.EditableTextField`2.<>c__DisplayClass1_0.<SetValue>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableTextField`2.SetValue(T value)
+   at Atata.EditableField`2.<>c__DisplayClass12_0.<Set>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableField`2.Set(T value)
+   at IFlow.Testing.StepDefinitions.RegistrationAndLoginSteps.GivenUserPutCompleteDataButDonTMarkCheckboxesOnRegistration() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\RegistrationAndLoginSteps.cs:line 26
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 12
+2021-04-28 14:12:22.6256 ERROR OpenQA.Selenium.NoSuchElementException : Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ValueSetUsingClearAndSendKeysAttribute.Execute[TOwner](IUIComponent`1 component, String value)
+   at Atata.EditableTextField`2.<>c__DisplayClass1_0.<SetValue>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableTextField`2.SetValue(T value)
+   at Atata.EditableField`2.<>c__DisplayClass12_0.<Set>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableField`2.Set(T value)
+   at IFlow.Testing.StepDefinitions.RegistrationAndLoginSteps.GivenUserPutCompleteDataButDonTMarkCheckboxesOnRegistration() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\RegistrationAndLoginSteps.cs:line 26
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 12
+2021-04-28 14:12:22.6263 ERROR OpenQA.Selenium.NoSuchElementException : Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ValueSetUsingClearAndSendKeysAttribute.Execute[TOwner](IUIComponent`1 component, String value)
+   at Atata.EditableTextField`2.<>c__DisplayClass1_0.<SetValue>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableTextField`2.SetValue(T value)
+   at Atata.EditableField`2.<>c__DisplayClass12_0.<Set>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableField`2.Set(T value)
+   at IFlow.Testing.StepDefinitions.RegistrationAndLoginSteps.GivenUserPutCompleteDataButDonTMarkCheckboxesOnRegistration() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\RegistrationAndLoginSteps.cs:line 26
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 12
+2021-04-28 14:12:22.6263 ERROR OpenQA.Selenium.NoSuchElementException : Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ValueSetUsingClearAndSendKeysAttribute.Execute[TOwner](IUIComponent`1 component, String value)
+   at Atata.EditableTextField`2.<>c__DisplayClass1_0.<SetValue>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableTextField`2.SetValue(T value)
+   at Atata.EditableField`2.<>c__DisplayClass12_0.<Set>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableField`2.Set(T value)
+   at IFlow.Testing.StepDefinitions.RegistrationAndLoginSteps.GivenUserPutCompleteDataButDonTMarkCheckboxesOnRegistration() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\RegistrationAndLoginSteps.cs:line 26
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 12
+2021-04-28 14:12:22.6267  INFO > Clean up AtataContext
+2021-04-28 14:12:22.6267  INFO > Clean up AtataContext
+2021-04-28 14:12:22.6995  INFO < Clean up AtataContext (0.072s)
+2021-04-28 14:12:22.6995  INFO < Clean up AtataContext (0.072s)
+2021-04-28 14:12:22.7002  INFO Finished test (6.641s)
+2021-04-28 14:12:22.7002  INFO Finished test (6.641s)
+2021-04-28 14:12:22.7005  INFO Pure test execution time: 5.301s
+2021-04-28 14:12:22.7005  INFO Pure test execution time: 5.301s
+
+]]></output>
+              <failure>
+                <message>OpenQA.Selenium.NoSuchElementException : Unable to locate visible element:
+- By: XPath "(//label/span[text()='Login *']//..//..//../input [@type='text'])/descendant-or-self::input[@type='text' or not(@type)]"
+- Search time: 5.013s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}</message>
+                <stack-trace>   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.&lt;&gt;c__DisplayClass0_0.&lt;GetWithLogging&gt;b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.&lt;&gt;c__DisplayClass3_0.&lt;GetElement&gt;b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean&amp; found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.get_Scope()
+   at Atata.ValueSetUsingClearAndSendKeysAttribute.Execute[TOwner](IUIComponent`1 component, String value)
+   at Atata.EditableTextField`2.&lt;&gt;c__DisplayClass1_0.&lt;SetValue&gt;b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableTextField`2.SetValue(T value)
+   at Atata.EditableField`2.&lt;&gt;c__DisplayClass12_0.&lt;Set&gt;b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.EditableField`2.Set(T value)
+   at IFlow.Testing.StepDefinitions.RegistrationAndLoginSteps.GivenUserPutCompleteDataButDonTMarkCheckboxesOnRegistration() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\StepDefinitions\RegistrationAndLoginSteps.cs:line 26
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at IFlow.Testing.Feature.LoginTestsFeature.ScenarioCleanup()
+   at IFlow.Testing.Feature.LoginTestsFeature.UserWantLogInWitchActiveAccount() in C:\Users\lezi\source\repos\IFLOW.testing\IFLOW.testing\Feature\LoginTests.feature:line 12</stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" name="RegistrationFeature" fullname="IFlow.Testing.Feature.RegistrationFeature" total="4" passed="0" failed="0" inconclusive="4" skipped="0" result="Passed" start-time="2021-04-28T 12:12:27Z" end-time="2021-04-28T 12:12:34Z" duration="7.404989">
+            <test-case name="CreateAccountWithCorectData" fullname="IFlow.Testing.Feature.RegistrationFeature.CreateAccountWithCorectData" methodname="CreateAccountWithCorectData" classname="RegistrationFeature" result="Inconclusive" start-time="2021-04-28T 12:12:27Z" end-time="2021-04-28T 12:12:31Z" duration="3.942599" asserts="0">
+              <output><![CDATA[2021-04-28 14:12:27.2487  INFO Starting test: CreateAccountWithCorectData
+2021-04-28 14:12:27.2487  INFO Starting test: CreateAccountWithCorectData
+2021-04-28 14:12:27.2519 TRACE > Set up AtataContext
+2021-04-28 14:12:27.2519 TRACE > Set up AtataContext
+2021-04-28 14:12:27.2554 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:27.2554 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:27.2580 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:27.2580 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:27.2593 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:27.2593 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:27.2598 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:27.2598 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:27.2601 TRACE - Set: Culture=en-US
+2021-04-28 14:12:27.2601 TRACE - Set: Culture=en-US
+2021-04-28 14:12:27.2610 TRACE - Set: DriverService=ChromeDriverService on port 51859
+2021-04-28 14:12:27.2610 TRACE - Set: DriverService=ChromeDriverService on port 51859
+2021-04-28 14:12:28.4284 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:28.4284 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:28.4299 TRACE < Set up AtataContext (1.177s)
+2021-04-28 14:12:28.4299 TRACE < Set up AtataContext (1.177s)
+Given User without account want create new on registration page
+2021-04-28 14:12:28.4352  INFO Go to "Main" page
+2021-04-28 14:12:28.4352  INFO Go to "Main" page
+2021-04-28 14:12:28.4410  INFO Go to URL "http://app-iflow-dev-001.azurewebsites.net/"
+2021-04-28 14:12:28.4410  INFO Go to URL "http://app-iflow-dev-001.azurewebsites.net/"
+2021-04-28 14:12:29.7899 TRACE > Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Main" page
+2021-04-28 14:12:29.7899 TRACE > Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Main" page
+2021-04-28 14:12:29.8124  INFO - > Assert: title should equal "React app"
+2021-04-28 14:12:29.8124  INFO - > Assert: title should equal "React app"
+2021-04-28 14:12:29.8234  INFO - < Assert: title should equal "React app" (0.010s)
+2021-04-28 14:12:29.8234  INFO - < Assert: title should equal "React app" (0.010s)
+2021-04-28 14:12:29.8241 TRACE < Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Main" page (0.034s)
+2021-04-28 14:12:29.8241 TRACE < Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Main" page (0.034s)
+2021-04-28 14:12:29.8254  INFO > Click "Login to System Clickable" control
+2021-04-28 14:12:29.8254  INFO > Click "Login to System Clickable" control
+2021-04-28 14:12:29.8275 TRACE - > Execute behavior ClickUsingClickMethodAttribute against "Login to System Clickable" control
+2021-04-28 14:12:29.8275 TRACE - > Execute behavior ClickUsingClickMethodAttribute against "Login to System Clickable" control
+2021-04-28 14:12:29.8287 TRACE - - > Find visible element by XPath "(//span[contains(text(),'Login to system')])/descendant-or-self::*" in ChromeDriver
+2021-04-28 14:12:29.8287 TRACE - - > Find visible element by XPath "(//span[contains(text(),'Login to system')])/descendant-or-self::*" in ChromeDriver
+2021-04-28 14:12:29.8608 TRACE - - < Find visible element by XPath "(//span[contains(text(),'Login to system')])/descendant-or-self::*" in ChromeDriver (0.030s) >> Element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 }
+2021-04-28 14:12:29.8608 TRACE - - < Find visible element by XPath "(//span[contains(text(),'Login to system')])/descendant-or-self::*" in ChromeDriver (0.030s) >> Element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 }
+2021-04-28 14:12:29.8614 TRACE - - > Click element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 }
+2021-04-28 14:12:29.8614 TRACE - - > Click element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 }
+2021-04-28 14:12:30.0142 TRACE - - < Click element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 } (0.152s)
+2021-04-28 14:12:30.0142 TRACE - - < Click element { Id=c24b3199-5117-4ddf-8117-272ce18ba827 } (0.152s)
+2021-04-28 14:12:30.0192 TRACE - < Execute behavior ClickUsingClickMethodAttribute against "Login to System Clickable" control (0.191s)
+2021-04-28 14:12:30.0192 TRACE - < Execute behavior ClickUsingClickMethodAttribute against "Login to System Clickable" control (0.191s)
+2021-04-28 14:12:30.0235  INFO < Click "Login to System Clickable" control (0.197s)
+2021-04-28 14:12:30.0235  INFO < Click "Login to System Clickable" control (0.197s)
+2021-04-28 14:12:30.0420  INFO Go to "Login" page
+2021-04-28 14:12:30.0420  INFO Go to "Login" page
+2021-04-28 14:12:30.0750 TRACE > Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Login" page
+2021-04-28 14:12:30.0750 TRACE > Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Login" page
+2021-04-28 14:12:30.0805  INFO - > Assert: title should equal "React app"
+2021-04-28 14:12:30.0805  INFO - > Assert: title should equal "React app"
+2021-04-28 14:12:30.1239  INFO - < Assert: title should equal "React app" (0.043s)
+2021-04-28 14:12:30.1239  INFO - < Assert: title should equal "React app" (0.043s)
+2021-04-28 14:12:30.1282 TRACE < Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Login" page (0.052s)
+2021-04-28 14:12:30.1282 TRACE < Execute trigger VerifyTitleAttribute { Values="React app", Case=Title, Match=Equals } on Init against "Login" page (0.052s)
+2021-04-28 14:12:30.1307  INFO > Click "Create Account" button
+2021-04-28 14:12:30.1307  INFO > Click "Create Account" button
+2021-04-28 14:12:30.1315 TRACE - > Execute behavior ClickUsingClickMethodAttribute against "Create Account" button
+2021-04-28 14:12:30.1315 TRACE - > Execute behavior ClickUsingClickMethodAttribute against "Create Account" button
+2021-04-28 14:12:30.1342 TRACE - - > Find visible element by XPath "(//a[@href='/register']/button[@type='submit'])/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver
+2021-04-28 14:12:30.1342 TRACE - - > Find visible element by XPath "(//a[@href='/register']/button[@type='submit'])/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver
+2021-04-28 14:12:30.1746 TRACE - - < Find visible element by XPath "(//a[@href='/register']/button[@type='submit'])/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver (0.040s) >> Element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 }
+2021-04-28 14:12:30.1746 TRACE - - < Find visible element by XPath "(//a[@href='/register']/button[@type='submit'])/descendant-or-self::*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button]" in ChromeDriver (0.040s) >> Element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 }
+2021-04-28 14:12:30.1752 TRACE - - > Click element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 }
+2021-04-28 14:12:30.1752 TRACE - - > Click element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 }
+2021-04-28 14:12:30.5235 TRACE - - < Click element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 } (0.348s)
+2021-04-28 14:12:30.5235 TRACE - - < Click element { Id=4cd9186a-5559-40dc-8751-f7f033c66371 } (0.348s)
+2021-04-28 14:12:30.5262 TRACE - < Execute behavior ClickUsingClickMethodAttribute against "Create Account" button (0.394s)
+2021-04-28 14:12:30.5262 TRACE - < Execute behavior ClickUsingClickMethodAttribute against "Create Account" button (0.394s)
+2021-04-28 14:12:30.5281  INFO < Click "Create Account" button (0.397s)
+2021-04-28 14:12:30.5281  INFO < Click "Create Account" button (0.397s)
+2021-04-28 14:12:30.5330  INFO Go to "Register" page
+2021-04-28 14:12:30.5330  INFO Go to "Register" page
+-> done: RegistrationAndLoginSteps.GivenUserWithoutAccountWantCreateNewOnRegistrationPage() (2,1s)
+When Input all correct data and confirm
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"Input all correct data and confirm")]
+        public void WhenInputAllCorrectDataAndConfirm()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then User se succed message and get conrfirmation email
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"User se succed message and get conrfirmation email")]
+        public void ThenUserSeSuccedMessageAndGetConrfirmationEmail()
+        {
+            _scenarioContext.Pending();
+        }
+
+And After corfimation user can log in
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"After corfimation user can log in")]
+        public void ThenAfterCorfimationUserCanLogIn()
+        {
+            _scenarioContext.Pending();
+        }
+
+2021-04-28 14:12:31.0328  INFO > Clean up AtataContext
+2021-04-28 14:12:31.0328  INFO > Clean up AtataContext
+2021-04-28 14:12:31.1849  INFO < Clean up AtataContext (0.151s)
+2021-04-28 14:12:31.1849  INFO < Clean up AtataContext (0.151s)
+2021-04-28 14:12:31.1856  INFO Finished test (3.937s)
+2021-04-28 14:12:31.1856  INFO Finished test (3.937s)
+2021-04-28 14:12:31.1859  INFO Pure test execution time: 2.602s
+2021-04-28 14:12:31.1859  INFO Pure test execution time: 2.602s
+
+No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [When(@"Input all correct data and confirm")]
+        public void WhenInputAllCorrectDataAndConfirm()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"User se succed message and get conrfirmation email")]
+        public void ThenUserSeSuccedMessageAndGetConrfirmationEmail()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"After corfimation user can log in")]
+        public void ThenAfterCorfimationUserCanLogIn()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+]]></output>
+            </test-case>
+            <test-case name="CreatingAccountWithCompleteDataBatDondGiveAggreByCheckbox" fullname="IFlow.Testing.Feature.RegistrationFeature.CreatingAccountWithCompleteDataBatDondGiveAggreByCheckbox" methodname="CreatingAccountWithCompleteDataBatDondGiveAggreByCheckbox" classname="RegistrationFeature" result="Inconclusive" start-time="2021-04-28T 12:12:31Z" end-time="2021-04-28T 12:12:32Z" duration="1.287549" asserts="0">
+              <output><![CDATA[2021-04-28 14:12:31.1887  INFO Starting test: CreatingAccountWithCompleteDataBatDondGiveAggreByCheckbox
+2021-04-28 14:12:31.1887  INFO Starting test: CreatingAccountWithCompleteDataBatDondGiveAggreByCheckbox
+2021-04-28 14:12:31.1891 TRACE > Set up AtataContext
+2021-04-28 14:12:31.1891 TRACE > Set up AtataContext
+2021-04-28 14:12:31.1899 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:31.1899 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:31.1910 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:31.1910 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:31.1914 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:31.1914 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:31.1917 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:31.1917 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:31.1919 TRACE - Set: Culture=en-US
+2021-04-28 14:12:31.1919 TRACE - Set: Culture=en-US
+2021-04-28 14:12:31.1927 TRACE - Set: DriverService=ChromeDriverService on port 51882
+2021-04-28 14:12:31.1927 TRACE - Set: DriverService=ChromeDriverService on port 51882
+2021-04-28 14:12:32.3166 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:32.3166 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:32.3180 TRACE < Set up AtataContext (1.128s)
+2021-04-28 14:12:32.3180 TRACE < Set up AtataContext (1.128s)
+Given User without accont want create newon registration page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+
+And User put complete data but dont mark checkboxes on registration
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User put complete data but dont mark checkboxes on registration")]
+        public void GivenUserPutCompleteDataButDontMarkCheckboxesOnRegistration()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then User cannot create new accout
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+
+2021-04-28 14:12:32.3679  INFO > Clean up AtataContext
+2021-04-28 14:12:32.3679  INFO > Clean up AtataContext
+2021-04-28 14:12:32.4726  INFO < Clean up AtataContext (0.104s)
+2021-04-28 14:12:32.4726  INFO < Clean up AtataContext (0.104s)
+2021-04-28 14:12:32.4732  INFO Finished test (1.284s)
+2021-04-28 14:12:32.4732  INFO Finished test (1.284s)
+2021-04-28 14:12:32.4735  INFO Pure test execution time: 0.048s
+2021-04-28 14:12:32.4735  INFO Pure test execution time: 0.048s
+
+No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Given(@"User put complete data but dont mark checkboxes on registration")]
+        public void GivenUserPutCompleteDataButDontMarkCheckboxesOnRegistration()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+]]></output>
+            </test-case>
+            <test-case name="CreatingAccountWithIncompleteData" fullname="IFlow.Testing.Feature.RegistrationFeature.CreatingAccountWithIncompleteData" methodname="CreatingAccountWithIncompleteData" classname="RegistrationFeature" result="Inconclusive" start-time="2021-04-28T 12:12:32Z" end-time="2021-04-28T 12:12:33Z" duration="1.100781" asserts="0">
+              <output><![CDATA[2021-04-28 14:12:32.4776  INFO Starting test: CreatingAccountWithIncompleteData
+2021-04-28 14:12:32.4776  INFO Starting test: CreatingAccountWithIncompleteData
+2021-04-28 14:12:32.4780 TRACE > Set up AtataContext
+2021-04-28 14:12:32.4780 TRACE > Set up AtataContext
+2021-04-28 14:12:32.4789 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:32.4789 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:32.4793 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:32.4793 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:32.4796 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:32.4796 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:32.4798 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:32.4798 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:32.4803 TRACE - Set: Culture=en-US
+2021-04-28 14:12:32.4803 TRACE - Set: Culture=en-US
+2021-04-28 14:12:32.4812 TRACE - Set: DriverService=ChromeDriverService on port 51892
+2021-04-28 14:12:32.4812 TRACE - Set: DriverService=ChromeDriverService on port 51892
+2021-04-28 14:12:33.5052 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:33.5052 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:33.5060 TRACE < Set up AtataContext (1.027s)
+2021-04-28 14:12:33.5060 TRACE < Set up AtataContext (1.027s)
+Given User without accont want create newon registration page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+
+And User put incomplete data  on registration page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User put incomplete data  on registration page")]
+        public void GivenUserPutIncompleteDataOnRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then User cannot create new accout
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+
+2021-04-28 14:12:33.5234  INFO > Clean up AtataContext
+2021-04-28 14:12:33.5234  INFO > Clean up AtataContext
+2021-04-28 14:12:33.5746  INFO < Clean up AtataContext (0.051s)
+2021-04-28 14:12:33.5746  INFO < Clean up AtataContext (0.051s)
+2021-04-28 14:12:33.5750  INFO Finished test (1.097s)
+2021-04-28 14:12:33.5750  INFO Finished test (1.097s)
+2021-04-28 14:12:33.5752  INFO Pure test execution time: 0.017s
+2021-04-28 14:12:33.5752  INFO Pure test execution time: 0.017s
+
+No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Given(@"User put incomplete data  on registration page")]
+        public void GivenUserPutIncompleteDataOnRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+]]></output>
+            </test-case>
+            <test-case name="CreatingAccountWithWrongFormatData" fullname="IFlow.Testing.Feature.RegistrationFeature.CreatingAccountWithWrongFormatData" methodname="CreatingAccountWithWrongFormatData" classname="RegistrationFeature" result="Inconclusive" start-time="2021-04-28T 12:12:33Z" end-time="2021-04-28T 12:12:34Z" duration="1.07406" asserts="0">
+              <output><![CDATA[2021-04-28 14:12:33.5770  INFO Starting test: CreatingAccountWithWrongFormatData
+2021-04-28 14:12:33.5770  INFO Starting test: CreatingAccountWithWrongFormatData
+2021-04-28 14:12:33.5773 TRACE > Set up AtataContext
+2021-04-28 14:12:33.5773 TRACE > Set up AtataContext
+2021-04-28 14:12:33.5782 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:33.5782 TRACE - Use: "Atata.json" config
+2021-04-28 14:12:33.5794 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:33.5794 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2021-04-28 14:12:33.5797 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:33.5797 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2021-04-28 14:12:33.5799 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:33.5799 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2021-04-28 14:12:33.5801 TRACE - Set: Culture=en-US
+2021-04-28 14:12:33.5801 TRACE - Set: Culture=en-US
+2021-04-28 14:12:33.5816 TRACE - Set: DriverService=ChromeDriverService on port 51902
+2021-04-28 14:12:33.5816 TRACE - Set: DriverService=ChromeDriverService on port 51902
+2021-04-28 14:12:34.5824 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:34.5824 TRACE - Set: Driver=ChromeDriver (alias=chrome-headless)
+2021-04-28 14:12:34.5828 TRACE < Set up AtataContext (1.005s)
+2021-04-28 14:12:34.5828 TRACE < Set up AtataContext (1.005s)
+Given User without accont want create newon registration page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+
+And User put data in wrong format on registration page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"User put data in wrong format on registration page")]
+        public void GivenUserPutDataInWrongFormatOnRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then User cannot create new accout
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+
+2021-04-28 14:12:34.5975  INFO > Clean up AtataContext
+2021-04-28 14:12:34.5975  INFO > Clean up AtataContext
+2021-04-28 14:12:34.6487  INFO < Clean up AtataContext (0.051s)
+2021-04-28 14:12:34.6487  INFO < Clean up AtataContext (0.051s)
+2021-04-28 14:12:34.6491  INFO Finished test (1.072s)
+2021-04-28 14:12:34.6491  INFO Finished test (1.072s)
+2021-04-28 14:12:34.6493  INFO Pure test execution time: 0.014s
+2021-04-28 14:12:34.6493  INFO Pure test execution time: 0.014s
+
+No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"User without accont want create newon registration page")]
+        public void GivenUserWithoutAccontWantCreateNewonRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Given(@"User put data in wrong format on registration page")]
+        public void GivenUserPutDataInWrongFormatOnRegistrationPage()
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"User cannot create new accout")]
+        public void ThenUserCannotCreateNewAccout()
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <errors />
+  </test-suite>
+</test-run>
