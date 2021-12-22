@@ -2,15 +2,15 @@
 
 namespace IFlow.Testing.Pages
 {
-    using _ = TextBoxPage;
-    [Url(TextBoxUrl)]
+    using _ = TextBoxPage; //alias for better readability
+    [Url(TextBoxUrl)]      //Url extension to base url placed in SpecFlowHooks.cs
     [VerifyTitle("ToolsQA")]
-    public class TextBoxPage : BasePage<_>
+    public class TextBoxPage : BasePage<_> 
     {
         private const string TextBoxUrl = "/text-box";
 
-        [FindById("userName")]
-        public TextInput<_> UserNameTextBoxInput { get; set; }
+        [FindById("userName")] //Selector to find element
+        public TextInput<_> UserNameTextBoxInput { get; set; } //An element with its type and name
 
         [FindById("userEmail")]
         public EmailInput<_> UserEmailTextBoxInput { get; set; }

@@ -6,6 +6,7 @@ namespace IFlow.Testing.Pages
     public abstract class BasePage<TOwner> : Page<TOwner>
         where TOwner : BasePage<TOwner>
     {
+        //Some general helping methods that can be used in all pages
         public int[] GetElementSize(Text<TOwner> element)
         {
             return new int[2] { element.ComponentSize.Width.Value, element.ComponentSize.Height.Value };

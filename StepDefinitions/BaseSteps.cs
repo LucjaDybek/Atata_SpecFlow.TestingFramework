@@ -19,10 +19,11 @@ namespace IFlow.Testing.StepDefinitions
         protected User User { get; set; }
 
         [Obsolete("Visual Studio IntelliSense Work Around", true)]
-        protected void SetRandomUser(ScenarioContext scenarioContext)
+        protected void SetRandomUser(ScenarioContext scenarioContext)  //Method for creating new fake user data and adding it to scenario,
+                                                                       //you can use it in test steps (see TextBoxSteps)
         {
-            User = UserData.CreateUserData().Generate();
-            scenarioContext.Add(ScenarioContextDataKeys.UserName, User.UserName); 
+            User = UserData.CreateUserData().Generate();               //Fields for generating data are in Utils/DataFactory/UserData.cs
+            scenarioContext.Add(ScenarioContextDataKeys.UserName, User.UserName); //Keys for saving data are in Utils/DataFactory/ScenarioContextDataKeys.cs
             scenarioContext.Add(ScenarioContextDataKeys.Password, User.Password);
             scenarioContext.Add(ScenarioContextDataKeys.FirstName, User.FirstName);
             scenarioContext.Add(ScenarioContextDataKeys.Email, User.Email);
@@ -32,13 +33,13 @@ namespace IFlow.Testing.StepDefinitions
         }
         
         [Obsolete("Visual Studio IntelliSense Work Around", true)]
-        protected string GetRandomUser(ScenarioContext scenarioContext, string property)
+        protected string GetRandomUser(ScenarioContext scenarioContext, string property) //Method to get fake data from context
         {
             return scenarioContext.Get<string>(property); 
         }
 
         [Obsolete("Visual Studio IntelliSense Work Around", true)]
-        protected void SetSize(ScenarioContext scenarioContext, int sizeA, int sizeB)
+        protected void SetSize(ScenarioContext scenarioContext, int sizeA, int sizeB)    
         {
             scenarioContext.Add(ScenarioContextDataKeys.SizeA, sizeA);
             scenarioContext.Add(ScenarioContextDataKeys.SizeB, sizeB);

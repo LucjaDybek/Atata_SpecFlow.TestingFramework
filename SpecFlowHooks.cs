@@ -19,7 +19,7 @@ namespace IFlow.Testing
         public static void StetUpTestRun()
         {
 
-            AtataContext.GlobalConfiguration
+            AtataContext.GlobalConfiguration //browser configuration 
                 .UseChrome()
                 .WithArguments("start-maximized")
                 .UseCulture("en-US")
@@ -37,7 +37,6 @@ namespace IFlow.Testing
         public static void SetupBeforeFeature(FeatureContext featureContext)
         {
             featureContext.Set<FeaturePOCO>(new FeaturePOCO(featureContext.FeatureInfo.Title, featureContext.FeatureInfo.Description));
-
         }
 
         [BeforeScenario]

@@ -6,6 +6,6 @@ namespace IFlow.Testing.Utils.DataFactory
 {
     public static class DataBase
     {
-        public static string DataBaseConnectionString => "Input your connection string";
+        public static string DataBaseConnectionString => "Input your connection string"; //You can save data in database 
     }
 }
