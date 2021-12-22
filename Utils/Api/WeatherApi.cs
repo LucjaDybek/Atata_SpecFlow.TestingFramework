@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace IFlow.Testing.Utils.Api
 {
-    public static class WeatherApi
+    public static class WeatherApi //Api requests
     {
         public static async Task<dynamic> GetCurrentWeatherData(string city, string units = "metric")
         {

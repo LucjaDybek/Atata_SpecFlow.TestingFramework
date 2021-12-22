@@ -22,7 +22,7 @@ namespace IFlow.Testing.StepDefinitions
         {
             Go.To<TextBoxPage>()                 //Open page   
                 .UserNameTextBoxInput.Set(User.FirstName + " " + User.LastName) //Make actions on web elements from page you just opened eg. set -> input text 
-                .UserEmailTextBoxInput.Set(User.Email)
+                .UserEmailTextBoxInput.Set(User.Email) //User.Email is a reference to our generated fake data
                 .CurrentAddressTextBoxTextArea.Click()
                 .CurrentAddressTextBoxTextArea.Set(User.Country)
                 .PermanentAddressTextBoxTextArea.Set(User.Country);

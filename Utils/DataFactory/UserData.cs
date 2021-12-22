@@ -9,9 +9,9 @@ namespace IFlow.Testing.Utils.DataFactory
         public static readonly User CorrectApiUser = new User(UserConsts.key, UserConsts.header);
 
         [Obsolete("Visual Studio IntelliSense Work Around", true)]
-        public static Faker<User> CreateUserData()
+        public static Faker<User> CreateUserData()       //Method that generates data and returns it to save in scenario context (see BaseSteps.cs)
         {
-           return  new Faker<User>()
+           return  new Faker<User>()                     //All fields have description and example in Bogus Faker documentation 
                               .CustomInstantiator(f => new User())
                               .RuleFor(u => u.FirstName, f => f.Name.FirstName())
                               .RuleFor(u => u.LastName, f => f.Name.LastName())
