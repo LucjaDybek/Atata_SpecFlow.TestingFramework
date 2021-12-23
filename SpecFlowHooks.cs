@@ -25,7 +25,7 @@ namespace IFlow.Testing
                 .UseCulture("en-US")
                 .UseAllNUnitFeatures()
                 .ApplyJsonConfig<AtataConfig>()
-                .UseBaseUrl("https://demoqa.com");
+                .UseBaseUrl("https://uat-identity.cdecontrol.skanska.pl/");
           
             AtataContext.GlobalConfiguration.AutoSetUpDriverToUse();
 
