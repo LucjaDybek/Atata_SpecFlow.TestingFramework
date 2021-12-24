@@ -10,20 +10,22 @@ using TechTalk.SpecFlow;
 namespace Atata_SpecFlow.TestingFramework.StepDefinitions
 {
     [Binding]
-    public class LoginSteps:BaseSteps
+    public class LoginSteps : BaseSteps
     {
         [When(@"User enter data to login")] 
         public void logintopage() 
         {
-            Go.To<LoginPage>().username.Set(UserConsts.login).password.Set(UserConsts.password).buttonlogin.Click();
+            Go.To<LoginPage>()
+                .username.Set(UserConsts.login)
+               // .password.Set(UserConsts.password)
+                .buttonlogin.Click();
         }
 
         [Then(@"User is log in")]
-
         public void assertlogin()
         {
-            On<FavoritePage>().AreaFavorite.Should.BeVisible();
+            On<FavoritePage>()
+                .AreaFavorite.Should.BeVisible();
         }
-
     }
 }

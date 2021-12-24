@@ -26,8 +26,8 @@ namespace IFlow.Testing
                 .WithArguments("start-maximized")
                 .UseCulture("en-US")
                 .UseAllNUnitFeatures()
-                .ApplyJsonConfig<AtataConfig>()
-                .UseBaseUrl("http://dax-aos2/");
+                .ApplyJsonConfig<AtataConfig>();
+               // .UseBaseUrl("http://dax-aos2");
           
             AtataContext.GlobalConfiguration.AutoSetUpDriverToUse();
 
@@ -55,7 +55,7 @@ namespace IFlow.Testing
         {
             Go.To<LoginPage>()
                 .username.Set(UserConsts.login)
-                .password.Set(UserConsts.password)
+                //.password.Set(UserConsts.password)
                 .buttonlogin.Click();
         }
 
