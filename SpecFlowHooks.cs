@@ -1,8 +1,10 @@
 ﻿using System.Linq;
 using Atata;
+using Atata_SpecFlow.TestingFramework.Pages;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.MarkupUtils;
+using IFlow.Testing.Utils.DataFactory;
 using IFlow.Testing.Utils.Reports;
 
 using TechTalk.SpecFlow;
@@ -25,12 +27,13 @@ namespace IFlow.Testing
                 .UseCulture("en-US")
                 .UseAllNUnitFeatures()
                 .ApplyJsonConfig<AtataConfig>()
-                .UseBaseUrl("https://uat-identity.cdecontrol.skanska.pl/");
+                .UseBaseUrl("http://dax-aos2/");
           
             AtataContext.GlobalConfiguration.AutoSetUpDriverToUse();
 
             reportPOCO = new ReportPOCO();
             Reporter.SetupExtentReports();
+
         }
 
         [BeforeFeature]
@@ -45,6 +48,15 @@ namespace IFlow.Testing
             AtataContext.Configure().Build();
 
             scenarioContext.Set(new ScenarioPOCO(scenarioContext.ScenarioInfo.Title));
+        }
+
+        [BeforeStep]
+        public void setup()
+        {
+            Go.To<LoginPage>()
+                .username.Set(UserConsts.login)
+                .password.Set(UserConsts.password)
+                .buttonlogin.Click();
         }
 
         [AfterStep]
