@@ -8,13 +8,12 @@ using TechTalk.SpecFlow;
 
 namespace Atata_SpecFlow.TestingFramework.StepDefinitions
 {
-    [Binding]
-    public class ProjectRegisterSteps : BaseSteps
+    public class ProjectDetailsSteps : BaseSteps
     {
-        [When(@"Change Scenario")]
-        public void ChangeScenario()
+        [When(@"User get data from PD")]
+        public void UserGetDataFromPD()
         {
-            Go.To<ProjectRegisterPage>().Wait(6);
+            var garageNumber  = Go.To<ProjectDetailsPage>().Wait(5).findGarageParkingPlaces();
         }
     }
 }

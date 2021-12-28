@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Atata_SpecFlow.TestingFramework.Pages
 {
-    public class FavoritePage:BasePage<FavoritePage>
+    public class FavoritePage : BasePage<FavoritePage>
     {
         [FindById("favorites-page")]
         public Clickable<FavoritePage> AreaFavorite { get; set; }

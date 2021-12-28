@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Atata_SpecFlow.TestingFramework.Pages
 {
-    [Url("#/Project/List")]
+    [Url("/#/Project/List")]
     public class ProjectRegisterPage:BasePage<ProjectRegisterPage>
     {
         [FindByXPath("(//*[@class='form-select form-select-sm'])[1]")]

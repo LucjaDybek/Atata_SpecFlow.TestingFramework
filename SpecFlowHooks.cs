@@ -26,15 +26,14 @@ namespace IFlow.Testing
                 .WithArguments("start-maximized")
                 .UseCulture("en-US")
                 .UseAllNUnitFeatures()
-                .ApplyJsonConfig<AtataConfig>()
-                .UseBaseUrl("https://uat-identity.cdecontrol.skanska.pl/");
+                .ApplyJsonConfig<AtataConfig>();
+               // .UseBaseUrl("http://dax-aos2");
           
             AtataContext.GlobalConfiguration.AutoSetUpDriverToUse();
 
             reportPOCO = new ReportPOCO();
             Reporter.SetupExtentReports();
 
-            Go.To<LoginPage>().username.Set(UserConsts.login).password.Set(UserConsts.password).buttonlogin.Click();
         }
 
         [BeforeFeature]
@@ -49,6 +48,15 @@ namespace IFlow.Testing
             AtataContext.Configure().Build();
 
             scenarioContext.Set(new ScenarioPOCO(scenarioContext.ScenarioInfo.Title));
+        }
+
+        [BeforeStep]
+        public void setup()
+        {
+            Go.To<LoginPage>()
+                .username.Set(UserConsts.login)
+                //.password.Set(UserConsts.password)
+                .buttonlogin.Click();
         }
 
         [AfterStep]
