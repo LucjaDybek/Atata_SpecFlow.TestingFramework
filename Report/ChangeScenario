@@ -1,0 +1,40 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top" style="background-color: #d9534f;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo-img"></div>
+            </div>
+
+
+            <ul class="nav navbar-nav navbar-env">
+                <li>UAT</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="row">
+    <img src="/landingPageLogo.jpg">
+</div>
+
+    </div>
+
+    
+
+</body></html>

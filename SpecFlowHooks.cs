@@ -1,8 +1,10 @@
 ﻿using System.Linq;
 using Atata;
+using Atata_SpecFlow.TestingFramework.Pages;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.MarkupUtils;
+using IFlow.Testing.Utils.DataFactory;
 using IFlow.Testing.Utils.Reports;
 
 using TechTalk.SpecFlow;
@@ -31,6 +33,8 @@ namespace IFlow.Testing
 
             reportPOCO = new ReportPOCO();
             Reporter.SetupExtentReports();
+
+            Go.To<LoginPage>().username.Set(UserConsts.login).password.Set(UserConsts.password).buttonlogin.Click();
         }
 
         [BeforeFeature]

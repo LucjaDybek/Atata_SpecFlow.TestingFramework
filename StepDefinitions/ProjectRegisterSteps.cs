@@ -14,7 +14,7 @@ namespace Atata_SpecFlow.TestingFramework.StepDefinitions
         [When(@"Change Scenario")]
         public void ChangeScenario()
         {
-            On<ProjectRegisterPage>().SelectOperatingUnit.Set(" PL");
+            Go.To<ProjectRegisterPage>().SelectOperatingUnit.Set(" PL");
         }
     }
 }
