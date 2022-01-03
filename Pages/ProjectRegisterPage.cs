@@ -13,3 +13,4 @@ namespace Atata_SpecFlow.TestingFramework.Pages
         public Select<ProjectRegisterPage> SelectOperatingUnit { get; set; }
     }
 }
+
